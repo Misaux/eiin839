@@ -36,3 +36,16 @@ A:\Enseignement\Web_Server_and_Client\Web_Server_and_Client - Copie\ChatServer\o
 A:\Enseignement\Web_Server_and_Client\Web_Server_and_Client - Copie\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.dll
 A:\Enseignement\Web_Server_and_Client\Web_Server_and_Client - Copie\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.pdb
 A:\Enseignement\Web_Server_and_Client\Web_Server_and_Client - Copie\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.genruntimeconfig.cache
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.exe
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.deps.json
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.runtimeconfig.json
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.runtimeconfig.dev.json
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.dll
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\bin\Debug\netcoreapp3.1\EchoServer.pdb
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.csprojAssemblyReference.cache
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.AssemblyInfoInputs.cache
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.AssemblyInfo.cs
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.csproj.CoreCompileInputs.cache
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.dll
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.pdb
+E:\Users\jessy\Desktop\eiin839-main\TP1\Echo\ChatServer\obj\Debug\netcoreapp3.1\EchoServer.genruntimeconfig.cache

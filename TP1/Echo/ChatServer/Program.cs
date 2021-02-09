@@ -52,12 +52,23 @@ namespace Echo
             BinaryReader reader = new BinaryReader(stream);
             BinaryWriter writer = new BinaryWriter(stream);
 
+            string post = "http/1.0 200 OK";
+            string output = "<TITLE> L'exemple HTML le plus simple</TITLE>  \n<H1> Ceci est un sous-titre de niveau 1</H1>\n Bienvenue dans le monde HTML. Ceci est un paragraphe.\n  <P> Et ceci en est un second. </P>\n <A HREF=\"index.html\">cliquez ici</A> pour réafficher";
+
             while (true)
             {
-
                 string str = reader.ReadString();
-                Console.WriteLine(str);
-                writer.Write(str);
+                if (str.Equals("GET /index.html"))
+                {
+                    Console.Write("index OK");
+                    writer.Write(post + "\n\n" + output);
+                    writer.Write(output);
+                }
+                else
+                {
+                    Console.WriteLine(str);
+                    writer.Write(str);
+                }
             }
         }
 

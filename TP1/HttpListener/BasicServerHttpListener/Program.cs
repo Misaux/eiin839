@@ -72,7 +72,7 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                string responseString = "<TITLE> L'exemple HTML le plus simple</TITLE>  \n<H1> Ceci est un sous-titre de niveau 1</H1>\n Bienvenue dans le monde HTML. Ceci est un paragraphe.\n  <P> Et ceci en est un second. </P>\n <A HREF=\"index.html\">cliquez ici</A> pour réafficher";
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
