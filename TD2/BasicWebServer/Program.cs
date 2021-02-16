@@ -22,6 +22,8 @@ namespace BasicServerHTTPlistener
  
             // Create a listener.
             HttpListener listener = new HttpListener();
+            Mymethods mymethods = new Mymethods();
+            
 
             // Add the prefixes.
             if (args.Length != 0)
@@ -104,7 +106,7 @@ namespace BasicServerHTTPlistener
 
                 //
                 Console.WriteLine(documentContents);
-
+                Console.WriteLine(mymethods.mymethod(HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2")));
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
 
