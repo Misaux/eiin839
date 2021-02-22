@@ -10,7 +10,7 @@ namespace BasicServerHTTPlistener
     {
         private static void Main(string[] args)
         {
-            Header header = new Header();
+            BasicHeader.Header header = new BasicHeader.Header();
 
             if (!HttpListener.IsSupported)
             {
@@ -72,7 +72,17 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>" + header.getHeader(request);
+                string responseString = 
+                    "<HTML><BODY> Hello world!</BODY></HTML>" + Environment.NewLine 
+                    + header.getHeader(request) + Environment.NewLine
+                    + header.getBodyLength(request) + Environment.NewLine ;
+
+                if (header.IsLocal(request))
+                {
+                    responseString += "This request is local" + Environment.NewLine;
+                }
+
+                Console.WriteLine(responseString);
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;

@@ -5,21 +5,23 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicServerHTTPlistener
+namespace BasicHeader
 {
-    public class Header
+    class Header
     {
-        public Header()
-        {
-
-        }
-
-
         public string getHeader(HttpListenerRequest request)
         {
             return request.Headers.ToString();
         }
-    }
 
-    
+        public long getBodyLength(HttpListenerRequest request)
+        {
+            return request.ContentLength64;
+        }
+
+        public bool IsLocal(HttpListenerRequest request)
+        {
+            return request.IsLocal;
+        }
+    }
 }

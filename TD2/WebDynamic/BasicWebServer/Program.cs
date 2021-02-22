@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -18,8 +19,29 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("A more recent Windows version is required to use the HttpListener class.");
                 return;
             }
- 
- 
+
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = @"D:\Martin\Cours SI4\S8\WS\eiin839\TD2\ExecTest\bin\Debug\ExecTest.exe"; // Specify exe name.
+            start.Arguments = "Roger Michel"; // Specify arguments.
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            //
+            // Start the process.
+            //
+            using (Process process = Process.Start(start))
+            {
+                //
+                // Read in all the text from the process with the StreamReader.
+                //
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string result = reader.ReadToEnd();
+                    Console.WriteLine(result);
+                    Console.ReadLine();
+                }
+            }
+
+
             // Create a listener.
             HttpListener listener = new HttpListener();
 
