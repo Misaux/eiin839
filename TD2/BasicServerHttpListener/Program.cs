@@ -71,6 +71,15 @@ namespace BasicServerHTTPlistener
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
 
+                if (header.getBodyLength(request) >= 256)
+                {
+                    Console.WriteLine("That's a big file you got there ;)");
+                }
+                else
+                {
+                    Console.WriteLine("mmh pretty average");
+                }
+
                 // Construct a response.
                 string responseString = 
                     "<HTML><BODY> Hello world!</BODY></HTML>" + Environment.NewLine 
