@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- The title of the page is written in the tab of the browser. -->
     <title>My first Web Services UI client</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1 id="workingTest"></h1>
+    <script type="text/javascript" src="main.js"></script>
+    <label for="apiKey">API key: </label>
+    <input id="apiKey">
+    <button id="retrieveContractsButton" onclick="retrieveAllContracts();">Retrieve contracts</button>
+    <label for="list">Contracts: </label>
+    <input name="Contracts" list="list" id="contracts_list">
+    <datalist id="list"></datalist>
+    <button onclick="retrieveContractStations();">Retreive Contract Stations</button>
+    <br>
+    <label for="lat">Lat: </label>
+    <input name="lat" id="lat">
+    <label for="lng">Lng: </label>
+    <input name="lng" id="lng">
+    <button onclick="getClosestStation();">Retreive Contract Stations</button>
+
 </body>
+
 </html>
