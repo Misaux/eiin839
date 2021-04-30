@@ -55,6 +55,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\WebProxyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +70,22 @@
     <None Include="Connected Services\MathsOperations\SOAP.MathsOperations.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WebProxyService\service.wsdl" />
+    <None Include="Connected Services\WebProxyService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebProxyService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebProxyService\SOAP.WebProxyService.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WebProxyService\SOAP.WebProxyService.Station.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WebProxyService\WebProxyService.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -72,6 +93,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\Calculator\" />
     <WCFMetadataStorage Include="Connected Services\MathsOperations\" />
+    <WCFMetadataStorage Include="Connected Services\WebProxyService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\Calculator\configuration91.svcinfo" />
@@ -93,6 +115,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\MathsOperations\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WebProxyService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WebProxyService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WebProxyService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

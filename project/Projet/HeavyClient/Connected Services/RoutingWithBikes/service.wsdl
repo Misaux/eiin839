@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RoutingWithBikes" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WebProxy" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRoutingWithBikes_GetAllStations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStations" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetAllStations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStation" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStationWithBikes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStationWithBikes" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStationWithBikes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStationWithBikesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStationWithStands_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStationWithStands" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetNearestStationWithStands_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearestStationWithStandsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPath" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetPathDirections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathDirections" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetPathDirections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPathDirectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetFullPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullPath" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetFullPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetFullDirections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullDirections" />
+  </wsdl:message>
+  <wsdl:message name="IRoutingWithBikes_GetFullDirections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullDirectionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRoutingWithBikes">
+    <wsdl:operation name="GetAllStations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetAllStations" message="tns:IRoutingWithBikes_GetAllStations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetAllStationsResponse" message="tns:IRoutingWithBikes_GetAllStations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStation" message="tns:IRoutingWithBikes_GetNearestStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationResponse" message="tns:IRoutingWithBikes_GetNearestStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStationWithBikes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikes" message="tns:IRoutingWithBikes_GetNearestStationWithBikes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikesResponse" message="tns:IRoutingWithBikes_GetNearestStationWithBikes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStationWithStands">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStands" message="tns:IRoutingWithBikes_GetNearestStationWithStands_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStandsResponse" message="tns:IRoutingWithBikes_GetNearestStationWithStands_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetPath" message="tns:IRoutingWithBikes_GetPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetPathResponse" message="tns:IRoutingWithBikes_GetPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPathDirections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetPathDirections" message="tns:IRoutingWithBikes_GetPathDirections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetPathDirectionsResponse" message="tns:IRoutingWithBikes_GetPathDirections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetFullPath" message="tns:IRoutingWithBikes_GetFullPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetFullPathResponse" message="tns:IRoutingWithBikes_GetFullPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullDirections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetFullDirections" message="tns:IRoutingWithBikes_GetFullDirections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoutingWithBikes/GetFullDirectionsResponse" message="tns:IRoutingWithBikes_GetFullDirections_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRoutingWithBikes" type="tns:IRoutingWithBikes">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllStations">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetAllStations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStation">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetNearestStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStationWithBikes">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNearestStationWithStands">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStands" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPath">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPathDirections">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetPathDirections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullPath">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetFullPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullDirections">
+      <soap:operation soapAction="http://tempuri.org/IRoutingWithBikes/GetFullDirections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RoutingWithBikes">
+    <wsdl:port name="BasicHttpBinding_IRoutingWithBikes" binding="tns:BasicHttpBinding_IRoutingWithBikes">
+      <soap:address location="http://localhost:8733/RoutingWithBikes/RoutingWithBikes" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

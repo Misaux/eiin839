@@ -14,9 +14,12 @@ namespace SOAP
             Console.WriteLine(c.Add(2, 11));
             Console.ReadLine();
 
-            MathsOperations.MathsOperationsClient m = new MathsOperations.MathsOperationsClient();
+            /*MathsOperations.MathsOperationsClient m = new MathsOperations.MathsOperationsClient();
             Console.WriteLine(m.Add(2, 56));
-            Console.ReadLine();
+            Console.ReadLine();*/
+
+            WebProxyService.IWebProxyService w = new WebProxyService.WebProxyServiceClient();
+            Console.Write(w.GetAllStations());
         }
     }
 }
