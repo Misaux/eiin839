@@ -10,9 +10,9 @@ using System.IO;
 using System.Web.Script.Serialization;
 using System.Globalization;
 using System.ServiceModel.Web;
-using RoutingWithBike.WebProxyService;
+using RoutingWithBikesLibrary.WebProxyService;
 
-namespace RoutingWithBikes
+namespace RoutingWithBikesLibrary
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class RoutingWithBikes : IRoutingWithBikes

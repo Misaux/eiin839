@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RoutingWithBike.WebProxyService {
+namespace RoutingWithBikesLibrary.WebProxyService {
     using System.Runtime.Serialization;
     using System;
     
@@ -35,13 +35,13 @@ namespace RoutingWithBike.WebProxyService {
         private int numberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private RoutingWithBike.WebProxyService.Position positionField;
+        private RoutingWithBikesLibrary.WebProxyService.Position positionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string statusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private RoutingWithBike.WebProxyService.TotalStands totalStandsField;
+        private RoutingWithBikesLibrary.WebProxyService.TotalStands totalStandsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -106,7 +106,7 @@ namespace RoutingWithBike.WebProxyService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public RoutingWithBike.WebProxyService.Position position {
+        public RoutingWithBikesLibrary.WebProxyService.Position position {
             get {
                 return this.positionField;
             }
@@ -132,7 +132,7 @@ namespace RoutingWithBike.WebProxyService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public RoutingWithBike.WebProxyService.TotalStands totalStands {
+        public RoutingWithBikesLibrary.WebProxyService.TotalStands totalStands {
             get {
                 return this.totalStandsField;
             }
@@ -225,7 +225,7 @@ namespace RoutingWithBike.WebProxyService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private RoutingWithBike.WebProxyService.Availabilities availabilitiesField;
+        private RoutingWithBikesLibrary.WebProxyService.Availabilities availabilitiesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -238,7 +238,7 @@ namespace RoutingWithBike.WebProxyService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public RoutingWithBike.WebProxyService.Availabilities availabilities {
+        public RoutingWithBikesLibrary.WebProxyService.Availabilities availabilities {
             get {
                 return this.availabilitiesField;
             }
@@ -326,25 +326,25 @@ namespace RoutingWithBike.WebProxyService {
     public interface IWebProxyService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWebProxyService/GetAllStations", ReplyAction="http://tempuri.org/IWebProxyService/GetAllStationsResponse")]
-        RoutingWithBike.WebProxyService.Station[] GetAllStations();
+        RoutingWithBikesLibrary.WebProxyService.Station[] GetAllStations();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWebProxyService/GetAllStations", ReplyAction="http://tempuri.org/IWebProxyService/GetAllStationsResponse")]
-        System.Threading.Tasks.Task<RoutingWithBike.WebProxyService.Station[]> GetAllStationsAsync();
+        System.Threading.Tasks.Task<RoutingWithBikesLibrary.WebProxyService.Station[]> GetAllStationsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWebProxyService/GetStation", ReplyAction="http://tempuri.org/IWebProxyService/GetStationResponse")]
-        RoutingWithBike.WebProxyService.Station GetStation(string stationId, string stationContract);
+        RoutingWithBikesLibrary.WebProxyService.Station GetStation(string stationId, string stationContract);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWebProxyService/GetStation", ReplyAction="http://tempuri.org/IWebProxyService/GetStationResponse")]
-        System.Threading.Tasks.Task<RoutingWithBike.WebProxyService.Station> GetStationAsync(string stationId, string stationContract);
+        System.Threading.Tasks.Task<RoutingWithBikesLibrary.WebProxyService.Station> GetStationAsync(string stationId, string stationContract);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IWebProxyServiceChannel : RoutingWithBike.WebProxyService.IWebProxyService, System.ServiceModel.IClientChannel {
+    public interface IWebProxyServiceChannel : RoutingWithBikesLibrary.WebProxyService.IWebProxyService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebProxyServiceClient : System.ServiceModel.ClientBase<RoutingWithBike.WebProxyService.IWebProxyService>, RoutingWithBike.WebProxyService.IWebProxyService {
+    public partial class WebProxyServiceClient : System.ServiceModel.ClientBase<RoutingWithBikesLibrary.WebProxyService.IWebProxyService>, RoutingWithBikesLibrary.WebProxyService.IWebProxyService {
         
         public WebProxyServiceClient() {
         }
@@ -365,19 +365,19 @@ namespace RoutingWithBike.WebProxyService {
                 base(binding, remoteAddress) {
         }
         
-        public RoutingWithBike.WebProxyService.Station[] GetAllStations() {
+        public RoutingWithBikesLibrary.WebProxyService.Station[] GetAllStations() {
             return base.Channel.GetAllStations();
         }
         
-        public System.Threading.Tasks.Task<RoutingWithBike.WebProxyService.Station[]> GetAllStationsAsync() {
+        public System.Threading.Tasks.Task<RoutingWithBikesLibrary.WebProxyService.Station[]> GetAllStationsAsync() {
             return base.Channel.GetAllStationsAsync();
         }
         
-        public RoutingWithBike.WebProxyService.Station GetStation(string stationId, string stationContract) {
+        public RoutingWithBikesLibrary.WebProxyService.Station GetStation(string stationId, string stationContract) {
             return base.Channel.GetStation(stationId, stationContract);
         }
         
-        public System.Threading.Tasks.Task<RoutingWithBike.WebProxyService.Station> GetStationAsync(string stationId, string stationContract) {
+        public System.Threading.Tasks.Task<RoutingWithBikesLibrary.WebProxyService.Station> GetStationAsync(string stationId, string stationContract) {
             return base.Channel.GetStationAsync(stationId, stationContract);
         }
     }

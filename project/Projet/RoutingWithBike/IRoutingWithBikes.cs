@@ -1,4 +1,4 @@
-﻿using RoutingWithBike.WebProxyService;
+﻿using RoutingWithBikesLibrary.WebProxyService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace RoutingWithBikes
+namespace RoutingWithBikesLibrary
 {
     [ServiceContract]
     public interface IRoutingWithBikes

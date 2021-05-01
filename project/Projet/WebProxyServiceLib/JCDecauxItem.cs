@@ -16,6 +16,11 @@ namespace WebProxy
         static string apiKeyEntry = "&apiKey=" + apiKey;
         static Task<string> response;
 
+        public JCDecauxItem ()
+        {
+
+        }
+
         public static void getContracts()
         {
             response = httpClient.GetStringAsync("https://api.jcdecaux.com/vls/v1/contracts?apiKey=" + apiKey);
@@ -66,6 +71,7 @@ namespace WebProxy
 
     public class Station
     {
+        public Station() { }
         public int number { get; set; }
         public string contractName { get; set; }
         public string name { get; set; }
@@ -82,6 +88,7 @@ namespace WebProxy
 
     public class Contract
     {
+        public Contract() { }
         public string name { get; set; }
         public override string ToString()
         {
@@ -91,17 +98,20 @@ namespace WebProxy
 
     public class Position
     {
+        public Position() { }
         public float latitude { get; set; }
         public float longitude { get; set; }
     }
 
     public class TotalStands
     {
+        public TotalStands () { }
         public Availabilities availabilities { get; set; }
     }
 
     public class Availabilities
     {
+        public Availabilities () { }
         public int stands { get; set; }
 
         public int bikes { get; set; }

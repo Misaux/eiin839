@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HeavyClient.RoutingWithBikesLibrary;
 
 namespace HeavyClient
 {
     class Program
     {
-        private static RoutingWithBikes.IRoutingWithBikes routingWithBikes = new RoutingWithBikes.RoutingWithBikesClient();
+        private static IRoutingWithBikes routingWithBikes = new RoutingWithBikesClient();
 
         static void Main(string[] args)
         {
@@ -44,12 +46,12 @@ namespace HeavyClient
                         break;
 
                     case ("path"):
-                        path(Convert.ToSingle(arguments[1]), Convert.ToSingle(arguments[2]), Convert.ToSingle(arguments[3]), Convert.ToSingle(arguments[4]));
+                        path(Convert.ToSingle(arguments[1], new CultureInfo("en-US")), Convert.ToSingle(arguments[2], new CultureInfo("en-US")), Convert.ToSingle(arguments[3], new CultureInfo("en-US")), Convert.ToSingle(arguments[4], new CultureInfo("en-US")));
 
                         break;
 
                     case ("demo"):
-                        path(43.135902f, 6.001995f, 43.137233f, 5.998016f);
+                        path(43.273886f, 5.383903f, 43.325274f, 5.366893f);
 
                         break;
 

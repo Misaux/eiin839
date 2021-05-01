@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="964606ff-dba8-4ae1-9677-cb4d48246ddd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="abbdcc73-c4d0-4fbe-9123-908465215943" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9b350d80-0c10-436d-a92f-a6c77d0cf511" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="4b5064f9-dccf-415d-a02c-1e789a5bda9f" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="769034bd-9e0d-4924-b902-e28a1744d157" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
-    <MetadataFile FileName="WebProxy.xsd" MetadataType="Schema" ID="431b8a74-4623-42a7-9674-e6b30b914be9" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="34149707-3c69-4d90-972c-3b4f0ca038f0" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="92061726-69f2-4a14-a465-40f73b345dcc" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="2bf554a5-e9ca-4401-bc88-54e9837f6398" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6b484d1a-3fec-41fd-b76f-b27cef7f08c9" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
+    <MetadataFile FileName="WebProxy.xsd" MetadataType="Schema" ID="ff86abb3-8825-4fb1-89fc-e3304aa400a2" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="f69b4c1d-d912-4c0f-8ddc-de55626e3410" SourceId="1" SourceUrl="http://localhost:8733/RoutingWithBikes/RoutingWithBikes/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

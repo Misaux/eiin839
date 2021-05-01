@@ -18,7 +18,7 @@ namespace WebProxy
 
         public WebProxyService()
         {
-            GetAllStations();
+
         }
 
         public List<Station> GetAllStations()

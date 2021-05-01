@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HeavyClient.RoutingWithBikes {
+namespace HeavyClient.RoutingWithBikesLibrary {
     using System.Runtime.Serialization;
     using System;
     
@@ -35,13 +35,13 @@ namespace HeavyClient.RoutingWithBikes {
         private int numberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HeavyClient.RoutingWithBikes.Position positionField;
+        private HeavyClient.RoutingWithBikesLibrary.Position positionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string statusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HeavyClient.RoutingWithBikes.TotalStands totalStandsField;
+        private HeavyClient.RoutingWithBikesLibrary.TotalStands totalStandsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -106,7 +106,7 @@ namespace HeavyClient.RoutingWithBikes {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public HeavyClient.RoutingWithBikes.Position position {
+        public HeavyClient.RoutingWithBikesLibrary.Position position {
             get {
                 return this.positionField;
             }
@@ -132,7 +132,7 @@ namespace HeavyClient.RoutingWithBikes {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public HeavyClient.RoutingWithBikes.TotalStands totalStands {
+        public HeavyClient.RoutingWithBikesLibrary.TotalStands totalStands {
             get {
                 return this.totalStandsField;
             }
@@ -225,7 +225,7 @@ namespace HeavyClient.RoutingWithBikes {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HeavyClient.RoutingWithBikes.Availabilities availabilitiesField;
+        private HeavyClient.RoutingWithBikesLibrary.Availabilities availabilitiesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -238,7 +238,7 @@ namespace HeavyClient.RoutingWithBikes {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public HeavyClient.RoutingWithBikes.Availabilities availabilities {
+        public HeavyClient.RoutingWithBikesLibrary.Availabilities availabilities {
             get {
                 return this.availabilitiesField;
             }
@@ -322,38 +322,38 @@ namespace HeavyClient.RoutingWithBikes {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RoutingWithBikes.IRoutingWithBikes")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RoutingWithBikesLibrary.IRoutingWithBikes")]
     public interface IRoutingWithBikes {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetAllStations", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetAllStationsResponse")]
-        HeavyClient.RoutingWithBikes.Station[] GetAllStations();
+        HeavyClient.RoutingWithBikesLibrary.Station[] GetAllStations();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetAllStations", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetAllStationsResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station[]> GetAllStationsAsync();
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station[]> GetAllStationsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStation", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationResponse")]
-        HeavyClient.RoutingWithBikes.Station[] GetNearestStation(float latitude, float longitude);
+        HeavyClient.RoutingWithBikesLibrary.Station[] GetNearestStation(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStation", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station[]> GetNearestStationAsync(float latitude, float longitude);
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station[]> GetNearestStationAsync(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikes", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikesResponse")]
-        HeavyClient.RoutingWithBikes.Station GetNearestStationWithBikes(float latitude, float longitude);
+        HeavyClient.RoutingWithBikesLibrary.Station GetNearestStationWithBikes(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikes", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithBikesResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station> GetNearestStationWithBikesAsync(float latitude, float longitude);
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station> GetNearestStationWithBikesAsync(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStands", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStandsResponse")]
-        HeavyClient.RoutingWithBikes.Station GetNearestStationWithStands(float latitude, float longitude);
+        HeavyClient.RoutingWithBikesLibrary.Station GetNearestStationWithStands(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStands", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetNearestStationWithStandsResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station> GetNearestStationWithStandsAsync(float latitude, float longitude);
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station> GetNearestStationWithStandsAsync(float latitude, float longitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetPath", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetPathResponse")]
-        HeavyClient.RoutingWithBikes.Position[] GetPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
+        HeavyClient.RoutingWithBikesLibrary.Position[] GetPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetPath", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetPathResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Position[]> GetPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Position[]> GetPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetPathDirections", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetPathDirectionsResponse")]
         string[] GetPathDirections(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
@@ -362,10 +362,10 @@ namespace HeavyClient.RoutingWithBikes {
         System.Threading.Tasks.Task<string[]> GetPathDirectionsAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetFullPath", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetFullPathResponse")]
-        HeavyClient.RoutingWithBikes.Position[][] GetFullPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
+        HeavyClient.RoutingWithBikesLibrary.Position[][] GetFullPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetFullPath", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetFullPathResponse")]
-        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Position[][]> GetFullPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
+        System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Position[][]> GetFullPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingWithBikes/GetFullDirections", ReplyAction="http://tempuri.org/IRoutingWithBikes/GetFullDirectionsResponse")]
         string[][] GetFullDirections(float Slatitude, float Slongitude, float Elatitude, float Elongitude);
@@ -375,12 +375,12 @@ namespace HeavyClient.RoutingWithBikes {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IRoutingWithBikesChannel : HeavyClient.RoutingWithBikes.IRoutingWithBikes, System.ServiceModel.IClientChannel {
+    public interface IRoutingWithBikesChannel : HeavyClient.RoutingWithBikesLibrary.IRoutingWithBikes, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RoutingWithBikesClient : System.ServiceModel.ClientBase<HeavyClient.RoutingWithBikes.IRoutingWithBikes>, HeavyClient.RoutingWithBikes.IRoutingWithBikes {
+    public partial class RoutingWithBikesClient : System.ServiceModel.ClientBase<HeavyClient.RoutingWithBikesLibrary.IRoutingWithBikes>, HeavyClient.RoutingWithBikesLibrary.IRoutingWithBikes {
         
         public RoutingWithBikesClient() {
         }
@@ -401,43 +401,43 @@ namespace HeavyClient.RoutingWithBikes {
                 base(binding, remoteAddress) {
         }
         
-        public HeavyClient.RoutingWithBikes.Station[] GetAllStations() {
+        public HeavyClient.RoutingWithBikesLibrary.Station[] GetAllStations() {
             return base.Channel.GetAllStations();
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station[]> GetAllStationsAsync() {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station[]> GetAllStationsAsync() {
             return base.Channel.GetAllStationsAsync();
         }
         
-        public HeavyClient.RoutingWithBikes.Station[] GetNearestStation(float latitude, float longitude) {
+        public HeavyClient.RoutingWithBikesLibrary.Station[] GetNearestStation(float latitude, float longitude) {
             return base.Channel.GetNearestStation(latitude, longitude);
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station[]> GetNearestStationAsync(float latitude, float longitude) {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station[]> GetNearestStationAsync(float latitude, float longitude) {
             return base.Channel.GetNearestStationAsync(latitude, longitude);
         }
         
-        public HeavyClient.RoutingWithBikes.Station GetNearestStationWithBikes(float latitude, float longitude) {
+        public HeavyClient.RoutingWithBikesLibrary.Station GetNearestStationWithBikes(float latitude, float longitude) {
             return base.Channel.GetNearestStationWithBikes(latitude, longitude);
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station> GetNearestStationWithBikesAsync(float latitude, float longitude) {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station> GetNearestStationWithBikesAsync(float latitude, float longitude) {
             return base.Channel.GetNearestStationWithBikesAsync(latitude, longitude);
         }
         
-        public HeavyClient.RoutingWithBikes.Station GetNearestStationWithStands(float latitude, float longitude) {
+        public HeavyClient.RoutingWithBikesLibrary.Station GetNearestStationWithStands(float latitude, float longitude) {
             return base.Channel.GetNearestStationWithStands(latitude, longitude);
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Station> GetNearestStationWithStandsAsync(float latitude, float longitude) {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Station> GetNearestStationWithStandsAsync(float latitude, float longitude) {
             return base.Channel.GetNearestStationWithStandsAsync(latitude, longitude);
         }
         
-        public HeavyClient.RoutingWithBikes.Position[] GetPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
+        public HeavyClient.RoutingWithBikesLibrary.Position[] GetPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
             return base.Channel.GetPath(Slatitude, Slongitude, Elatitude, Elongitude);
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Position[]> GetPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Position[]> GetPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
             return base.Channel.GetPathAsync(Slatitude, Slongitude, Elatitude, Elongitude);
         }
         
@@ -449,11 +449,11 @@ namespace HeavyClient.RoutingWithBikes {
             return base.Channel.GetPathDirectionsAsync(Slatitude, Slongitude, Elatitude, Elongitude);
         }
         
-        public HeavyClient.RoutingWithBikes.Position[][] GetFullPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
+        public HeavyClient.RoutingWithBikesLibrary.Position[][] GetFullPath(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
             return base.Channel.GetFullPath(Slatitude, Slongitude, Elatitude, Elongitude);
         }
         
-        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikes.Position[][]> GetFullPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
+        public System.Threading.Tasks.Task<HeavyClient.RoutingWithBikesLibrary.Position[][]> GetFullPathAsync(float Slatitude, float Slongitude, float Elatitude, float Elongitude) {
             return base.Channel.GetFullPathAsync(Slatitude, Slongitude, Elatitude, Elongitude);
         }
         

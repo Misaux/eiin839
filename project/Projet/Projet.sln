@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProxyServiceLib", "WebProxyServiceLib\WebProxyServiceLib.csproj", "{8E8B744D-76FC-47B4-BB39-5F550243676A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithBikes", "RoutingWithBike\RoutingWithBikes.csproj", "{710C28DA-B538-42DD-9C82-2D835512EEC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithBikesLibrary", "RoutingWithBike\RoutingWithBikesLibrary.csproj", "{710C28DA-B538-42DD-9C82-2D835512EEC5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8E8B744D-76FC-47B4-BB39-5F550243676A} = {8E8B744D-76FC-47B4-BB39-5F550243676A}
 	EndProjectSection
@@ -17,12 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lightClient", "lightClient"
 		style.css = style.css
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithBikesHost", "RoutingWithBikesHost\RoutingWithBikesHost.csproj", "{3442A211-2D2D-4A9C-B11B-B2CE970BCE9A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProxyServiceHost", "WebProxyServiceHost\WebProxyServiceHost.csproj", "{CBA82AA5-9067-4AF5-8446-F49A2A5E0CDA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeavyClient", "HeavyClient\HeavyClient.csproj", "{7521F071-B84D-4417-B339-AFD0F600CF90}"
 	ProjectSection(ProjectDependencies) = postProject
+		{8E8B744D-76FC-47B4-BB39-5F550243676A} = {8E8B744D-76FC-47B4-BB39-5F550243676A}
 		{710C28DA-B538-42DD-9C82-2D835512EEC5} = {710C28DA-B538-42DD-9C82-2D835512EEC5}
 	EndProjectSection
 EndProject
@@ -40,14 +37,6 @@ Global
 		{710C28DA-B538-42DD-9C82-2D835512EEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{710C28DA-B538-42DD-9C82-2D835512EEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{710C28DA-B538-42DD-9C82-2D835512EEC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3442A211-2D2D-4A9C-B11B-B2CE970BCE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3442A211-2D2D-4A9C-B11B-B2CE970BCE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3442A211-2D2D-4A9C-B11B-B2CE970BCE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3442A211-2D2D-4A9C-B11B-B2CE970BCE9A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBA82AA5-9067-4AF5-8446-F49A2A5E0CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBA82AA5-9067-4AF5-8446-F49A2A5E0CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBA82AA5-9067-4AF5-8446-F49A2A5E0CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBA82AA5-9067-4AF5-8446-F49A2A5E0CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7521F071-B84D-4417-B339-AFD0F600CF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7521F071-B84D-4417-B339-AFD0F600CF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7521F071-B84D-4417-B339-AFD0F600CF90}.Release|Any CPU.ActiveCfg = Release|Any CPU
