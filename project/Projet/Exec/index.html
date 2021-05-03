@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lite Client</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form id="address_form" method="post">
+        <div id="inputs">
+            <label>Starting point: </label>
+            <input type="text" id="start" name="start" size="50">
+            <label>Ending point: </label>
+            <input type="text" id="end" name="end" size="50">
+            <button id="draw_path" type="button">Draw path</button>
+        </div>
+    </form>
+    <div id="map" class="map"></div>
+    <script src="main.js"></script>
+</body>
+</html>
